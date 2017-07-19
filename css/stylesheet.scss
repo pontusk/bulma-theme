@@ -19,8 +19,15 @@
 
 // Layout
 .section {
-  background-color: $gray-lighter;
-  
+  background-color: $grey-lighter;
+  border-bottom: 2px dotted;
+  border-color: $white;
 }
 
 // --- Custom ---
+
+.article-container {
+  background-color: $white;
+  border-radius: 10px;
+  padding: 20px;
+}

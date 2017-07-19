@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "3.3.0"
+gem "jekyll"
 
-gem "rb-fsevent", "~> 0.10.2"
+gem "rb-fsevent"
+
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?

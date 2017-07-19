@@ -6,15 +6,29 @@ layout: default
 <div class="container">
 <div class="columns is-multiline">
     {% for post in site.posts %}
-    <article role="article" class="column is-4">
-        <header>
-            <h2 class="title is-2"><a href="{{site.baseurl}}{{post.url}}"> {{post.title}}</a></h2>
-            <span class="subtitle is-4">{{post.description}}</span>
-        </header>
-        <div class="content">{{post.excerpt}}</div> 
-        <footer class="is-small"><time itemprop="dateCreated" datetime="{{post.date}}">{{post.date}}</time></footer>
+    <article role="article" class="column is-12-mobile is-12-tablet is-6-desktop is-4-widescreen">
+        <div class="article-container">
+            <header>
+                <h2 class="title is-2"><a href="{{site.baseurl}}{{post.url}}"> {{post.title}}</a></h2>
+                <span class="subtitle is-4">{{post.description}}</span>
+            </header>
+            <div class="content">{{post.excerpt}}</div> 
+            <footer class="is-small"><time itemprop="dateCreated" datetime="{{post.date}}">{{post.date}}</time></footer>
+        </div> <!-- article-container -->
     </article> 
     {% endfor %}
 </article>
 </div> <!-- containter -->
+</section>
+<section class="section">
+<div class="container">
+    <div class="parallax">
+        <div class="parallax__layer parallax__layer--back">
+            ...
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+            ...
+        </div>
+    </div> <!-- parallax -->
+</div> <!-- container -->
 </section>
